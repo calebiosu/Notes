@@ -7,12 +7,14 @@
 //
 
 #import "CBAAppDelegate.h"
+#import "Data.h"
 
 @implementation CBAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [Data getAllNotes];
     return YES;
 }
 							

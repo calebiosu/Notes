@@ -9,6 +9,7 @@
 #import "CBAMasterViewController.h"
 
 #import "CBADetailViewController.h"
+#import "Data.h"
 
 @interface CBAMasterViewController () {
     NSMutableArray *_objects;
@@ -25,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self MakeObjects];
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
@@ -32,6 +34,19 @@
     self.navigationItem.rightBarButtonItem = addButton;
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self MakeObjects];
+    [self.tableView reloadData];
+    
+}
+
+-(void)MakeObjects{
+    _objects = [NSMutableArray arrayWithArray:[[Data getAllNotes] allKeys]];
+    [_objects sortUsingComparator:^NSComparisonResult(NSDate *obj1, NSDate *obj2) {
+        return [obj2 compare:obj1];
+    }];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -43,7 +58,10 @@
     if (!_objects) {
         _objects = [[NSMutableArray alloc] init];
     }
-    [_objects insertObject:[NSDate date] atIndex:0];
+    NSString *key = [[NSDate date] description];
+    [Data setNote:kDeafultText forKey:key];
+    [Data setCurrentKey:key];
+    [_objects insertObject:key atIndex:0];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
@@ -64,8 +82,8 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    NSString *object = _objects[indexPath.row];
+    cell.textLabel.text = [[Data getAllNotes ] objectForKey:object];
     return cell;
 }
 
@@ -105,7 +123,7 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
+        NSString *object = _objects[indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
     }
 }
