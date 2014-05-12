@@ -21,5 +21,4 @@
 +(void)removeNoteForKey:(NSString *)key;
 +(void)saveNotes;
 
-
 @end

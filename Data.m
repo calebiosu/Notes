@@ -11,6 +11,7 @@
 @implementation Data
 
 static NSMutableDictionary *allNotes = nil;
+static NSMutableDictionary *allImages = nil;
 static NSString *currentKey = nil;
 
 +(NSMutableDictionary *)getAllNotes{

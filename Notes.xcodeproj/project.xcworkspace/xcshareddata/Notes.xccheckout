@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C001E024-97DD-4432-8005-5E1E3A1CA9BC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Notes</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0BCB09E1-9F07-4E2F-A59A-110450FA3ABF</key>
+		<string>https://github.com/calebiosu/Notes.git</string>
+		<key>7BA9E5FC-EF30-465B-90E4-E8B95D8EFE9F</key>
+		<string>http://github.com/calebiosu/Notes</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Notes.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0BCB09E1-9F07-4E2F-A59A-110450FA3ABF</key>
+		<string>../../Notes</string>
+		<key>7BA9E5FC-EF30-465B-90E4-E8B95D8EFE9F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://github.com/calebiosu/Notes</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7BA9E5FC-EF30-465B-90E4-E8B95D8EFE9F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7BA9E5FC-EF30-465B-90E4-E8B95D8EFE9F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Notes</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0BCB09E1-9F07-4E2F-A59A-110450FA3ABF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Notes</string>
+		</dict>
+	</array>
+</dict>
+</plist>

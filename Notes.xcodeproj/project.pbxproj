@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C3A40981920567500C5BCC4 /* def.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C3A40971920567500C5BCC4 /* def.png */; };
 		3C3C21FB191DBE5900C1578F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3C21FA191DBE5900C1578F /* Foundation.framework */; };
 		3C3C21FD191DBE5900C1578F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3C21FC191DBE5900C1578F /* CoreGraphics.framework */; };
 		3C3C21FF191DBE5900C1578F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3C21FE191DBE5900C1578F /* UIKit.framework */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C3A40971920567500C5BCC4 /* def.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = def.png; sourceTree = "<group>"; };
 		3C3C21F7191DBE5900C1578F /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C3C21FA191DBE5900C1578F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3C3C21FC191DBE5900C1578F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,6 +90,7 @@
 		3C3C21EE191DBE5800C1578F = {
 			isa = PBXGroup;
 			children = (
+				3C3A40971920567500C5BCC4 /* def.png */,
 				3C3C2232191DC2C300C1578F /* Data.h */,
 				3C3C2233191DC2C300C1578F /* Data.m */,
 				3C3C2200191DBE5900C1578F /* Notes */,
@@ -240,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C3C2216191DBE5900C1578F /* Images.xcassets in Resources */,
+				3C3A40981920567500C5BCC4 /* def.png in Resources */,
 				3C3C2205191DBE5900C1578F /* InfoPlist.strings in Resources */,
 				3C3C220E191DBE5900C1578F /* Main.storyboard in Resources */,
 			);
@@ -469,6 +473,7 @@
 				3C3C222E191DBE5900C1578F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C3C222F191DBE5900C1578F /* Build configuration list for PBXNativeTarget "NotesTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +482,7 @@
 				3C3C2231191DBE5900C1578F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
